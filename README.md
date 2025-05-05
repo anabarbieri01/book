@@ -1,59 +1,42 @@
 # Book
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+* Bootcamp dev-junior
 
-## Development server
+    Modulo 3, capitulo 2
 
-To start a local development server, run:
+* Revisando para a prova de Angular - Eletiva Web
 
-```bash
-ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+****************************************
 
-## Code scaffolding
+Passos iniciais para o projeto:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* instalar o angular/cli 
 
-```bash
-ng generate component component-name
-```
+    npm install -g @angular/cli
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+* Caso o computador não reconheça o ng, utilizar o comando set path: set path=%PATH%;
 
-```bash
-ng generate --help
-```
+    C:\Users\Aluno\AppData\Roaming\npm
 
-## Building
+Iniciando o projeto angular:
 
-To build the project run:
+* Comando para criar um novo projeto: 
 
-```bash
-ng build
-```
+ng new Calcv3 --no-standalone
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)?
 
-## Running unit tests
+ RESPOSTA: NO
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+* Comando para criar um novo componente: 
 
-```bash
-ng test
-```
+ng g c nomeConteiner
 
-## Running end-to-end tests
+* Comando para abrir a aplicação no localHost: 
 
-For end-to-end (e2e) testing, run:
+ng s -o
 
-```bash
-ng e2e
-```
+* Comando para instalar o bootstrap:
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+ ng add @ng-bootstrap/ng-bootstrap
