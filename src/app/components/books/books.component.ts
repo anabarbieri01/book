@@ -10,9 +10,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class BooksComponent {
 
-  book : Book = {
-    title: "X"
-  } as Book; //para indicar que o book irá receber os dados
+  book : Book = {} as Book; //para indicar que o book irá receber os dados
 
   books: Book[] = [//criando um array para mostra a lista de books
     {

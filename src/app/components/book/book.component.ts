@@ -13,6 +13,8 @@ export class BookComponent {
   //objeto book, com os dados para a interface
   book : Book = {} as Book; //para poder inicializar um obejtos vazio, sem informções no form de cadastro
 
-
+  save(){
+    console.log("Save"); //Criando o método para o evento de click
+  }
 
 }
