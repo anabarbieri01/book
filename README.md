@@ -62,3 +62,6 @@ Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SS
 * Em book.component.html montamos um formulário para cadastro de livros.
 
 * Em book.component.hmtl,  [(ngModel)]="book.title" faz a conexão entre o formulário e os dados do objeto da interface.
+
+* Em book.component.ts ->   book : Book = {} as Book;
+    serve para inicializar um objeto vazio, mesmo ele sendo campo obrigatório (essa é uma das formas de fazer).
