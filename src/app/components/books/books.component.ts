@@ -11,6 +11,8 @@ import { Title } from '@angular/platform-browser';
 export class BooksComponent {
 
   book : Book = {} as Book; //para indicar que o book irá receber os dados
+  isUpdate : boolean = false;//se estiver atualizando um livro ele vale true e se não false
+
 
   books: Book[] = [//criando um array para mostra a lista de books
     {
@@ -49,17 +51,24 @@ export class BooksComponent {
 //vai pegar o objeto que foi passado para o filho e salva dentro do array
 //irá salvar os dados do form dentro do array(tabela)
   saveBook(){
+   if(!this.isUpdate){
     this.book.id = this.books.length + 1; //id é gerado pelo sistema
     this.books.push(this.book); //salva os dados no array
-    this.book = {} as Book; //limpa os dados do form após salvar
-  }
+ 
+   }
+   this.book = {} as Book; //limpa os dados do form após salvar
+
+    }
 
   update(book:Book){
-    console.log("Update book" + book.title);
+    this.book = book; //vai permitir visualizar as informação do livro selecionado.
+    this.isUpdate = true;//isso indica que estamos atualizando um novo livro ão criando
+
   }
 
   remove(book:Book){
-    console.log("Remove book" + book.title);
+
+    
   }
 
 }
