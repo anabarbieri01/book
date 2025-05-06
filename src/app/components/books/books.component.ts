@@ -44,6 +44,14 @@ export class BooksComponent {
       price: 35.50
     }
 
-  ]
+  ];
+
+//vai pegar o objeto que foi passado para o filho e salva dentro do array
+//irá salvar os dados do form dentro do array(tabela)
+  saveBook(){
+    this.book.id = this.books.length + 1; //id é gerado pelo sistema
+    this.books.push(this.book); //salva os dados no array
+    this.book = {} as Book; //limpa os dados do form após salvar
+  }
 
 }

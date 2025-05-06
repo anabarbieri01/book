@@ -1,4 +1,4 @@
-<app-book [book]="book"></app-book> <!--Tornou o book filho de books-->
+<app-book [book]="book" (saveEmitter)="saveBook()"></app-book> <!--Tornou o book filho de books-->
 
 <div class="container">
     <h3>Livros Cadastrados:</h3>

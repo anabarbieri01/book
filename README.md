@@ -66,5 +66,25 @@ Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SS
 * Em book.component.ts ->   book : Book = {} as Book;
     serve para inicializar um objeto vazio, mesmo ele sendo campo obrigatório (essa é uma das formas de fazer).
 
+Passos para salvar os dados do form:
+
 * Em book.componet.ts, usamos o @Input para indicar que os dados do componete vem de fora.
+
+* em book.component.ts (filho), usamos o *Output* para Envia os dados do Filho(book) para o pai(books), assim conseguimos gravar os dados inserido no form de cadastro, na tabela de livros.
+
+    *   save(){
+    this.saveEmitter.emit();//Evento enviado
+    } --> É o evento criado para ser acionado quando clicar no botão Salvar.
+
+* em Books.component.ts (pai)
+    *  book : Book = {} as Book; //para indicar que o book irá receber os dados
+
+    *  saveBook(){
+    this.book.id = this.books.length + 1; //id é gerado pelo sistema
+    this.books.push(this.book); //salva os dados no array
+    this.book = {} as Book; //limpa os dados do form após salvar
+  }
+
+ 
+
 

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core'; //tem que importa o Input para usa-lo
+import { Component, EventEmitter, Input, Output} from '@angular/core'; //tem que importa o Input para usa-lo
 import { Book } from '../../book';//esta importando a inteface Book.ts
 
 @Component({
@@ -10,11 +10,17 @@ import { Book } from '../../book';//esta importando a inteface Book.ts
 export class BookComponent {
   @Input()//para indicar que a informação dessa classe vem de fora, nesse caso vai vim do formulário de cadastro do Books 
   
+ 
   //objeto book, com os dados para a interface
   book : Book = {} as Book; //para poder inicializar um obejtos vazio, sem informções no form de cadastro
 
+  @Output() //Envia os dados do Filho(book) para o pai(books)
+  saveEmitter = new EventEmitter(); //toda vez que o save é chamado o pai é avisado
+
+
   save(){
-    console.log("Save"); //Criando o método para o evento de click
+    this.saveEmitter.emit();//Evento enviado
+  
   }
 
 }
