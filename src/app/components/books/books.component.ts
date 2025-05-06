@@ -54,4 +54,12 @@ export class BooksComponent {
     this.book = {} as Book; //limpa os dados do form após salvar
   }
 
+  update(book:Book){
+    console.log("Update book" + book.title);
+  }
+
+  remove(book:Book){
+    console.log("Remove book" + book.title);
+  }
+
 }

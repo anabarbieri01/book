@@ -10,6 +10,7 @@
                 <th>Título</th>
                 <th>Autor</th>
                 <th>Preço</th>
+                <th>Opções</th>
             </tr>
         </thead>
         <tbody>
@@ -18,6 +19,10 @@
                 <td>{{books.title}}</td>
                 <td>{{books.author}}</td>
                 <td>{{books.price}}</td>
+                <td> <!-- Botões de alterar e remover com os efeitos-->
+                    <button class="btn btn-success m-2" (click)="update(books)">Alterar</button>
+                    <button class="btn btn-danger" (click)="remove(books)">Remover</button>
+                </td>
                 <!--Dados vem do books.component.ts - array-->
             </tr>
 
