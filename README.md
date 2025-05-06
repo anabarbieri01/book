@@ -23,20 +23,24 @@ Iniciando o projeto angular:
 
 * Comando para criar um novo projeto: 
 
-ng new Calcv3 --no-standalone
+    ng new Calcv3 --no-standalone
 
 Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)?
 
- RESPOSTA: NO
+    RESPOSTA: NO
 
 * Comando para criar um novo componente: 
 
-ng g c nomeConteiner
+    ng g c nomeConteiner
 
 * Comando para abrir a aplicação no localHost: 
 
-ng s -o
+    ng s -o
 
 * Comando para instalar o bootstrap:
 
- ng add @ng-bootstrap/ng-bootstrap
+    ng add @ng-bootstrap/ng-bootstrap
+
+* Para caso não tenha a pasta node_modules (quando baixa o clone ela não vem, então precisa instalar novamente o npm)
+
+    npm install
