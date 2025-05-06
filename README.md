@@ -47,4 +47,6 @@ Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SS
     ng add @ng-bootstrap/ng-bootstrap
 
 ****************Anotações*******************
-O arquico /app/book.ts serve para definir a estrutura de um objeto book (nele vai ter as variaveis de book), e permitir manipular esse objeto
+* O arquico /app/book.ts serve para definir a estrutura de um objeto book (nele vai ter as variaveis de book), e permitir manipular esse objeto na interface.
+
+* No arquivo /components/book.component.ts criamos o objeto book com os dados apartir de uma interface.
