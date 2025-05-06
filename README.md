@@ -65,3 +65,6 @@ Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SS
 
 * Em book.component.ts ->   book : Book = {} as Book;
     serve para inicializar um objeto vazio, mesmo ele sendo campo obrigatório (essa é uma das formas de fazer).
+
+* Em book.componet.ts, usamos o @Input para indicar que os dados do componete vem de fora.
+
