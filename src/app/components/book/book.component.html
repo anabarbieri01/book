@@ -1,1 +1,17 @@
-<p>book works!</p>
+<!--Interpolação para exibir os dados de book
+{{book.id}}-->
+
+<div class="row text-center">
+    <div class="col">
+        {{book.id}}
+    </div>
+    <div class="col">
+        {{book.title}}
+    </div>
+    <div class="col">
+        {{book.author | uppercase}} <!--Com o uppercase deixamos o nome do autor em Maiuscula-->
+    </div>
+    <div class="col">
+        {{book.price}}
+    </div>
+</div>

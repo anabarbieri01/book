@@ -50,3 +50,6 @@ Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SS
 * O arquico /app/book.ts serve para definir a estrutura de um objeto book (nele vai ter as variaveis de book), e permitir manipular esse objeto na interface.
 
 * No arquivo /components/book.component.ts criamos o objeto book com os dados apartir de uma interface.
+
+* em /componentes/book.component.hmtl , exbimos os dados do objeto book.
+

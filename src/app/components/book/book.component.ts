@@ -11,10 +11,10 @@ export class BookComponent {
   book : Book = { //objeto book, com os dados para a interface
     id: 1,
     title: "Angular",
-    author: "A",
+    author: "Ana",
     price: 5.00
   }
 
-  
+
 
 }
