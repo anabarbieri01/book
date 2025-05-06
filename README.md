@@ -53,3 +53,6 @@ Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SS
 
 * em /componentes/book.component.hmtl , exbimos os dados do objeto book.
 
+* components/books -> para mostrar uma lista de libros, atraves da criação de um array.
+
+* Em /components/books/books.component.HMTL é usado a diretiva ngFor que é usado para mostrar os dados do array de books de forma automatica

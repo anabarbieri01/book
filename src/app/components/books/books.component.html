@@ -1,0 +1,25 @@
+<div class="container">
+    <h3>Livros Cadastrados:</h3>
+    <!--Criando uma tabela para mostrar os dados de books-->
+    <table class="table"> <!--essa classe pega uma tabela simples do bootstrap-->
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let books of books"> <!--ngFor usado para mostrar o array de book de forma automatica-->
+                <td>{{books.id}}</td>
+                <td>{{books.title}}</td>
+                <td>{{books.author}}</td>
+                <td>{{books.price}}</td>
+                <!--Dados vem do books.component.ts - array-->
+            </tr>
+
+
+        </tbody>
+    </table>
+</div>
