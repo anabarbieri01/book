@@ -37,10 +37,14 @@ Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SS
 
     ng s -o
 
-* Comando para instalar o bootstrap:
-
-    ng add @ng-bootstrap/ng-bootstrap
 
 * Para caso não tenha a pasta node_modules (quando baixa o clone ela não vem, então precisa instalar novamente o npm)
 
     npm install
+
+* Comando para instalar o bootstrap:
+
+    ng add @ng-bootstrap/ng-bootstrap
+
+****************Anotações*******************
+O arquico /app/book.ts serve para definir a estrutura de um objeto book (nele vai ter as variaveis de book), e permitir manipular esse objeto
