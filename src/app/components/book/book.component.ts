@@ -8,12 +8,8 @@ import { Book } from '../../book';//esta importando a inteface Book.ts
   styleUrl: './book.component.css'
 })
 export class BookComponent {
-  book : Book = { //objeto book, com os dados para a interface
-    id: 1,
-    title: "Angular",
-    author: "Ana",
-    price: 5.00
-  }
+  //objeto book, com os dados para a interface
+  book : Book = {} as Book; //para poder inicializar um obejtos vazio, sem informções no form de cadastro
 
 
 

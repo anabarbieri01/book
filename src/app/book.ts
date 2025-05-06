@@ -4,4 +4,7 @@ export interface Book{
     title : string;
     author : string;
     price : number;
+//  price ?: number;
+    //a ? faz com que os dados não sejam obrigatórios
+
 }
