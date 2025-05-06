@@ -60,3 +60,5 @@ Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SS
 * Para utilizar Formularios no angular o primeiro passo é importar o modulo dele no app.module.ts
 
 * Em book.component.html montamos um formulário para cadastro de livros.
+
+* Em book.component.hmtl,  [(ngModel)]="book.title" faz a conexão entre o formulário e os dados do objeto da interface.
