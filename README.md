@@ -56,3 +56,7 @@ Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SS
 * components/books -> para mostrar uma lista de libros, atraves da criação de um array.
 
 * Em /components/books/books.component.HMTL é usado a diretiva ngFor que é usado para mostrar os dados do array de books de forma automatica
+
+* Para utilizar Formularios no angular o primeiro passo é importar o modulo dele no app.module.ts
+
+* Em book.component.html montamos um formulário para cadastro de livros.
