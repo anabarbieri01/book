@@ -85,6 +85,6 @@ Passos para salvar os dados do form:
     this.book = {} as Book; //limpa os dados do form após salvar
   }
 
- 
+ * Remover e alterar dados da tabela:
 
 

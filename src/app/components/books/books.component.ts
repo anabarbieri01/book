@@ -12,7 +12,7 @@ export class BooksComponent {
 
   book : Book = {} as Book; //para indicar que o book irá receber os dados
   isUpdate : boolean = false;//se estiver atualizando um livro ele vale true e se não false
-
+  idCount : number = 5;
 
   books: Book[] = [//criando um array para mostra a lista de books
     {
@@ -52,12 +52,13 @@ export class BooksComponent {
 //irá salvar os dados do form dentro do array(tabela)
   saveBook(){
    if(!this.isUpdate){
-    this.book.id = this.books.length + 1; //id é gerado pelo sistema
+    this.book.id = this.idCount; //id é gerado pelo sistema
+    this.idCount++;
     this.books.push(this.book); //salva os dados no array
  
    }
    this.book = {} as Book; //limpa os dados do form após salvar
-
+   this.isUpdate = false;
     }
 
   update(book:Book){
@@ -67,8 +68,8 @@ export class BooksComponent {
   }
 
   remove(book:Book){
+    this.books = this.books.filter( b => b !== book);
 
-    
   }
 
 }
