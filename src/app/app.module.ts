@@ -7,7 +7,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './components/header/header.component';
 import { BookComponent } from './components/book/book.component';
 import { BooksComponent } from './components/books/books.component';
-import { FormsModule } from '@angular/forms'; //importando o modulo de formulario
+import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component'; //importando o modulo de formulario
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { FormsModule } from '@angular/forms'; //importando o modulo de formulari
     HeaderComponent,
     BookComponent,
     BooksComponent,
+    NavbarComponent,
+    FooterComponent,
 
   ],
   imports: [
